@@ -158,6 +158,11 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/video.js"></script>
     <script src="js/init.js"></script>
+    <script>
+        $('#menuToggle li a').on('click', function(){
+            $('.menuToggle input[name="menuTog"]').prop('checked', false);
+        });
+    </script>
 
 </body>
 </html>
