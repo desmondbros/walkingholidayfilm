@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" sizes="72x72" href="/images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/lite-yt-embed.css">
     <meta property="og:site_name" content="Walking Holiday - Feature Film">
     <meta property="og:title" content="Walking Holiday - Feature Film">
     <meta property="og:description" content="Walking Holiday - Film. Coming soon.">
@@ -20,46 +21,143 @@
 
 <body>
     <div class="hero-image-template heroFade" style="background-image: url(images/P1074916_edited_685.webp); background-position: bottom 50% center;">
-        <div>
-            <div class="home-text home">
+        <header class="sticky">
+         <div>
+            <a href="/">
+                <div class=""></div>
+            </a>
+        </div>
+        <nav>
+            <div class="menuToggle" id="menuToggle">
+                <input type="checkbox" class="toggle" name="menuTog">
+                <span>+</span>
+                <ul class="show-desktop hide-mobile black" id="nav">
+                    <li><a href="#info" class="hover-fill smoothscroll">info</a></li>                                
+                    <li><a href="#newsletter" class="hover-fill smoothscroll">newsletter</a></li>
+                    <li><a href="#trailer" class="hover-fill smoothscroll">trailer</a></li>
+                    <li><a href="#enquiries" class="hover-fill smoothscroll">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div class="home-text home">            
+            <div class="home-buttons">
+                </div>
                 <h1>Walking Holiday</h1>
-                <div><h2>FEATURE FILM - COMING SOON</h2></div>
                 <div class="home-buttons">
-                    <div><a href="#newsletter" class="button smoothscroll">Newsletter</a></div>
-                    <div><a href="#info" class="button smoothscroll">Info</a></div>
+                    <div><a href="#newsletter" class="button button-arrow smoothscroll">Newsletter</a></div>
+                    <div><a class="button button-play video-overlay-youtube video-module" data-youtube="W4kishZ8uVY"> Watch Trailer</a></div>
                 </div>
             </div>
-        </div>
+        <div class="home-text-lower">FEATURE FILM • IRELAND, SPAIN • 2026 • RUNTIME: 70 MINS • DIRECTED BY CIAN DESMOND & JACK DESMOND • STARRING AMHLAOIBH MAC SUIBHNE & ELENA SEIJO</div>
+            </div>
+    </div>
+
+      <!--Video Modal: This is where the video player will pop up.-->
+    <div class="video-modal">
+        <div class="video-modal-close"></div>
+        <div class="injectVideo"></div>
         
     </div>
 
-     <div class="container block-half flexIt" id="info">
+    <div class="container block-half block-blue-light flexIt" id="info">
         <div class="container-short center">
-            <div class="text-box">
-                <h2>Walking Holiday</h2>
-                <p><i>Walking Holiday</i> is an upcoming feature film, currently in post-production.</p>
-                <p>Shot on location in Galicia (Spain) and Cork (Ireland).</p>
+            <div>
+                <h3>The Story</h3>
+                <p class="logline">An office worker quits his job to walk the Camino de Santiago in his mother’s memory, but takes a detour when he meets a Galician grandmother on a mission to collect the ashes of her dead son.</p>
             </div>  
         </div>
     </div>
 
-    <div class="container" id="newsletter">
+    <div class="" id="info">
+        <div class="grid-two">
+            <img src="/images/Walking_Holiday_Desmond_Bros_P1075059.webp" alt="Walking Holiday film" width="100" height="100" class="grid-two_right">            
+            <div class="container container-short grid-text">                
+                <h2 class="scroll-reveal" >About <i>Walking Holiday</i></h2>
+                <p><i>Walking Holiday</i> is an Irish feature film, currently going to festivals.</p>
+                <p>• Running time: 70 minutes</p>
+                <p>• Genre: Drama, Feel-good Roadtrip</p>
+                <p>• STARRING Amhlaoibh Mac Suibhne & Elena Seijo</p>
+                <p>• Directed by Cian Desmond & Jack Desmond</p>
+                <p>• Produced by Silvia Laguna López</p>                
+                <p>• Shot on location in Galicia (Spain) and Cork (Ireland).</p>
+                <div class="center"><a href="#newsletter" class="smoothscroll scroll-reveal fadeIn button button-arrow">Sign up for newsletter</a></div>
+            </div>           
+        </div>
+    </div>
+
+    <div class="block-half block-blue-light" id="trailer">
+        <div class="container-short">
+            <h2 style="padding-top: 1em;">Trailer</h2>
+            <div class="iframe-container">
+                <lite-youtube videoid="W4kishZ8uVY" playlabel="Walking Holiday official trailer" style="background-image: url('/images/P1074916_edited.webp');" class="scroll-reveal fadeUp"></lite-youtube>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container block-half block-yellow flexIt" id="festivals">
+        <div class="container-short center">
+            <div>
+                <h2>Festivals</h2>
+
+                <div class="text-box block-blue-light">
+                <h2>World Premiere Announced</h2>
+                <p>OFFICIAL SELECTION - Galway Film Fleadh 2026</p>
+                <img src="/images/Laurels_38th-Galway-Film-fleadh-Official-selection.svg" alt="laurel">
+                <p>Thursday, 9th July</p>
+               <div class="center"><a href="https://www.galwayfilmfleadh.com/project/walking-holiday/" class="scroll-reveal fadeIn button button-blue button-arrow white">Get tickets & view programme</a></div>
+            </div>
+                
+            </div>  
+        </div>
+    </div>
+
+
+    <div class="container block-half block-blue-light flexIt">
+        <div class="container-short center">
+            <div>
+                <h2>How to Watch</h2>
+                <p>If you're interested in watching the film, thank you! For now, the film is going to festivals. So you can check to see if the film is playing at a festival near you.</p>
+                <p>To watch the film in the future, sign up to our <a href="#newsletter" class="smoothscroll underline">mailing list</a>, so we can let you know when and how to watch the film.</p>
+                <div class="center"><a href="#newsletter" class="smoothscroll scroll-reveal fadeIn button button-arrow">Sign up for newsletter</a></div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container block-half block-white flexIt" id="newsletter">
         <div class="container-short center">
             <div class="text-box newsletter">
-                <h2>Newsletter Sign-Up</h2>
-                <p>Sign up to our mailing list to follow us on our film journey. The latest updates, including when & where to watch the film.</p>
+                <h2>Join Our Mailing List</h2>
+                <p>Sign up to our newsletter to follow us on our film journey. The latest updates, including when & where to watch the film.</p>
                 <p>We'll only send news about <i>Walking Holiday</i>, very infrequently. We'll never share your data with others.</p>
                 
                <iframe width="540" height="305" src="https://a9da7df6.sibforms.com/serve/MUIFANKwOzzsD5W80R0HibJKAQqFnvug8u5uw4SHYqBt1xrlcJe42b9JQUliC__jdPMqYKORUzE74M7-y6RLRtz-pjDUo1ENvnKdlTTVz7ABjmgdzlOuWgvVByIQSxbo2HVQErZJpGOrqwhJOQyLI8-NP2_OPxUzib3PAp8rr8k0jRdI_8lQx_mDJgRawMWm3qrh6p8fRzpzYn8zHw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
                 <p class="form-terms">We will never share your data with others. By signing up, you agree to receive emails from us about this film. You can unsubscribe at any time.</p>
-
+            </div>  
+        </div>
+    </div>
+    
+    <div class="container block-half flexIt" id="enquiries">
+        <div class="container-short center">
+            <div>
+                <h2>Festival & Distribution Enquiries</h2>
+                <p class="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#100;&#101;&#115;&#109;&#111;&#110;&#100;&#98;&#114;&#111;&#115;&#46;&#105;&#101;">&#105;&#110;&#102;&#111;&#64;&#100;&#101;&#115;&#109;&#111;&#110;&#100;&#98;&#114;&#111;&#115;&#46;&#105;&#101;</a></p>
             </div>  
         </div>
     </div>
 
     <div class="footer">
+        <a href="https://desmondbros.ie/" class="logo-box logo-box-footer"></a>
         <p>©2026 Desmond Bros Media Limited. All rights reserved.</p>
     </div>
+
+    <script src="js/lite-yt-embed.js"></script>
+   
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 </html>
