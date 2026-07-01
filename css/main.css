@@ -396,7 +396,7 @@ nav ul li a:hover {
 
 .home-text.home {
     position: absolute;
-    bottom: 10vh;
+    bottom: 12vh;
     text-align: center !important;
     max-width: 1000px;
 }
@@ -414,8 +414,8 @@ nav ul li a:hover {
     position: absolute;
     text-align: center;
     width: 100%;
-    padding: 1em;
-    bottom: 5vh;
+    padding: .4em;
+    bottom: 2vh;
     color: #fff;
     z-index: 0;
     padding-bottom: 0;
@@ -766,5 +766,4 @@ nav ul li a:hover {
     .home-text h1 {
         font-size: 4em;
     }
-
 }
