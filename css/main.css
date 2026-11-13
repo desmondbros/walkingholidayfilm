@@ -699,6 +699,7 @@ img.poster {
 }
 
 .logoGridContainer#logoGridLaurels {max-width: 80%; width: 1000px;}
+.logoGridContainer#logoGridWinnerBanner {max-width: 100%; max-width: 1000px;}
 
 .logoGridFlex {
     display: flex;
