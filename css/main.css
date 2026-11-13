@@ -333,11 +333,18 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    justify-self:center;
 }
 
 .grid-two_right {order: 0;}
 
 .grid-text {padding-bottom: 6em; padding-top: 6em;}
+
+img.poster {
+ height: 500px;
+ width: auto;
+ margin: 0, auto;
+}
 
 .bg-overlay {
   position: absolute;
@@ -372,7 +379,7 @@ nav ul li a:hover {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100dvh;
+    height: 80dvh;
     width: 100%;
     background-position: center;
     text-align: center;
@@ -397,7 +404,7 @@ nav ul li a:hover {
 
 .home-text.home {
     position: absolute;
-    bottom: 12vh;
+    bottom: 20vh;
     text-align: center !important;
     max-width: 1000px;
 }
@@ -772,6 +779,9 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 900px) {
+    .hero-image-template {
+        height: 90dvh;
+    }
     .home-text.home {
         bottom: 25vh;
     }
